@@ -75,15 +75,18 @@ public class StudentManagement {
                     if (studentCount == 0) {
                         System.out.println("The student list is empty.");
                     } else {
-
-                        for (int i = 0; i < studentCount; i++) {
-                            Student s = students[i];
-                            System.out.println("=====Student Details=====");
-                            System.out.println("Student ID: " + s.id);
-                            System.out.println("Student First Name: " + s.firstName);
-                            System.out.println("Student Last Name: " + s.lastName);
-                            System.out.println("Student Age: " + s.age);
-                            System.out.println("===== End of Student Details=====");
+                        try {
+                            for (int i = 0; i < studentCount; i++) {
+                                Student s = students[i];
+                                System.out.println("=====Student Details=====");
+                                System.out.println("Student ID: " + s.id);
+                                System.out.println("Student First Name: " + s.firstName);
+                                System.out.println("Student Last Name: " + s.lastName);
+                                System.out.println("Student Age: " + s.age);
+                                System.out.println("===== End of Student Details=====");
+                            }
+                        } catch (Exception e) {
+                            System.out.println("An error occurred while displaying the student details: " + e.getMessage());
                         }
                     }
                     break;
