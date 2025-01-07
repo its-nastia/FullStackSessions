@@ -7,7 +7,7 @@ public class Student {
     int age;
     String major;
 
-    public Student(int id, String firstName, String lastName, int age, String major) {
+    Student(int id, String firstName, String lastName, int age, String major) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -16,10 +16,10 @@ public class Student {
     }
 
     public String toString() {
-    return String.format("ID: %d, First Name: %s, Last Name: %s, Major: %s",
-            this.id,
-            this.firstName,
-            this.lastName,
-            this.major);
+        return String.format("ID: %d, First name: %s, Last name: %s, Major: %s",
+                id,
+                firstName,
+                lastName,
+                major);
     }
 }

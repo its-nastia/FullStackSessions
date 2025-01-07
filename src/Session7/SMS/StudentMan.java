@@ -99,11 +99,11 @@ public class StudentMan {
 
                             System.out.println("Enter new age: ");
                             s.age = scanner.nextInt();
+                            scanner.nextLine();
 
                             System.out.println("Enter new major: ");
                             s.major = scanner.nextLine();
 
-                            scanner.nextLine();
                             System.out.println("Student updated.");
                             found = true;
                             break;
