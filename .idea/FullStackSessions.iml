@@ -8,5 +8,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="gson-2.11.0" level="project" />
+    <orderEntry type="library" name="apache.maven.plugins.jar.plugin" level="application" />
+    <orderEntry type="library" name="fasterxml.jackson.core.annotations" level="application" />
   </component>
 </module>

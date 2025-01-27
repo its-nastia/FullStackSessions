@@ -62,22 +62,12 @@ public class StudentManUpdated {
 
                     System.out.println("Enter student age: ");
                     int stAge = scanner.nextInt();
-                    try {
-                        student.setAge(stAge);
-                        scanner.nextLine();
-                    } catch (Exception e) {
-                        System.out.println("Invalid age. " + e.getMessage());
-                        break;
-                    }
+                    student.setAge(stAge);
+                    scanner.nextLine();
 
                     System.out.println("Enter student major:");
                     String major = scanner.nextLine();
-                    try {
-                        student.setMajor(major);
-                    } catch (Exception e) {
-                        System.out.println("Invalid age. " + e.getMessage());
-                        break;
-                    }
+                    student.setMajor(major);
 
                     students.add(student);
                     System.out.println("Information saved successfully: " + student.toString());
